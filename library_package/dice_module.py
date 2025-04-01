@@ -1,5 +1,5 @@
 import random
-
+from .tracker_module import Tracker
 
 class Dice:
     def __init__(self, faces=6, values=[1, 2, 3, 4, 5, 6], fair=True, chances=[1, 1, 1, 1, 1, 1], tracker=None):
@@ -24,5 +24,5 @@ class Dice:
         """Roll the dice and return the result."""
         result = random.choices(self.values, weights=self.chances)[0]
         if self.tracker:
-            self.tracker.track(result)  # Notify Tracker of the dice roll result
+            self.tracker.add_result(result)
         return result

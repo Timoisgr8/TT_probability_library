@@ -1,5 +1,5 @@
 import random
-
+from .tracker_module import Tracker
 
 class Coin:
     def __init__(self, head_p=0.5, tracker=None):
@@ -11,5 +11,5 @@ class Coin:
         result = 'Heads' if random.random() <= self.head_p else 'Tails'
         if self.tracker:
             # Notify Tracker of the coin flip result
-            self.tracker.track(result)
+            self.tracker.add_result(result)
         return result
