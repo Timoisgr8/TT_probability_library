@@ -10,7 +10,7 @@ classifiers = [
  
 setup(
   name='timothytewprobabilitylibrary',
-  version='0.0.1',
+  version='0.1.0',
   description='Basic probability library',
   long_description=open('README.md').read() + '\n\n' + open('CHANGELOG.txt').read(),
   url='',  

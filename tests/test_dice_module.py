@@ -1,5 +1,5 @@
 import unittest
-from library_package.dice_module import Dice
+from TT_probability_package.dice_module import Dice
 
 class TestDice(unittest.TestCase):
 

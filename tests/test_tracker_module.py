@@ -1,7 +1,7 @@
 import unittest
-from library_package.dice_module import Dice
-from library_package.coin_module import Coin
-from library_package.tracker_module import Tracker
+from TT_probability_package.dice_module import Dice
+from TT_probability_package.coin_module import Coin
+from TT_probability_package.analyser_module import Analyser
 
 class TestTracker(unittest.TestCase):
 
