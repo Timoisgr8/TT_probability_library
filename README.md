@@ -7,7 +7,29 @@ This library has a few common items used in probabilistic settings. This include
  - Dice
  - Coin
 
-Additionally the package is equip with an analyser module with useful functions.
+There is 2 additional classes:
+ - analyser module
+ - game_simulation
+
+The analyser module has useful functions to track results or scan for some basic patterns.
+The game_simulation class uses matplotlib to track results from a game function live.
+
+Example code:
+
+from TT_probability_package.game_simulation_module import GameSimulation
+from TT_probability_package.coin_module import Coin
+
+import numpy as np
+
+def result_func():
+    coin_1 = Coin(head_p=0.7)
+    coin_2 = Coin()
+
+    return [coin_1.flip() == "H", coin_2.flip() == "H"]
+
+game_simulation = GameSimulation(result_func, variable_names=['coin_1', 'coin_2'], trials=10000)
+
+game_simulation.run()
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
