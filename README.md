@@ -15,7 +15,7 @@ The analyser module has useful functions to track results or scan for some basic
 The game_simulation class uses matplotlib to track results from a game function live.
 
 Example code:
-
+```
 from TT_probability_package.game_simulation_module import GameSimulation
 from TT_probability_package.coin_module import Coin
 
@@ -30,7 +30,7 @@ def result_func():
 game_simulation = GameSimulation(result_func, variable_names=['coin_1', 'coin_2'], trials=10000)
 
 game_simulation.run()
-
+```
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 analyser_module:
