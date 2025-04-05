@@ -1,5 +1,3 @@
+My python library:
 
-
-Test cases:
-
-Run python -m unittest discover tests
+pip install TT-probability-package
